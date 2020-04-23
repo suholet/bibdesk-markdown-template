@@ -1,0 +1,12 @@
+<$publications>
+<$pubType=book?>
+[#<$citeKey/>]: <$authors.name.@componentsJoinedByCommaAndAnd/>, _<$fields.Title/>_, <$fields.Edition/>, (<$fields.Publisher/>, <$fields.Year/>).
+
+<?$pubType=article?>
+[#<$citeKey/>]: <$authors.name.@componentsJoinedByCommaAndAnd/>, "<$fields.Title/>", <$fields.Journal/> <$fields.Volume/>, no. <$itemIndex/> (<$fields.Month/> <$fields.Year/>): <$fields.Pages/>, <$remoteURLs.URL.absoluteString.@firstObject/>.
+
+<?$pubType=misc?>
+[#<$citeKey/>]: <$authors.name.@componentsJoinedByCommaAndAnd/>, <$fields.Title/>, accessed <$fields.Lastchecked/>, <$remoteURLs.URL.absoluteString.@firstObject/>.
+
+</$pubType?>
+</$publications>
