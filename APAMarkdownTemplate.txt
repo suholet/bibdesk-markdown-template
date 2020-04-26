@@ -1,0 +1,12 @@
+<$publications>
+<$pubType=book?>
+[#<$citeKey/>]: <$authors.abbreviatedNormalizedName.stringByRemovingTeX.@componentsJoinedByCommaAndAmpersand/> (<$fields.Year/>). _<$fields.Title/>_ <$fields.Edition?>(<$fields.Edition/> ed.)</$fields.Edition?>. <$fields.Address?><$fields.Address/>:</$fields.Address?><$fields.Publisher/>.
+
+<?$pubType=article?>
+[#<$citeKey/>]: <$authors.abbreviatedNormalizedName.stringByRemovingTeX.@componentsJoinedByCommaAndAmpersand/> (<$fields.Year/>). <$fields.Title/>. _<$fields.Journal/><$fields.Volume?>, <$fields.Volume/></$fields.Volume?><$fields.Number?>(<$fields.Number/>)</$fields.Number?>_<$fields.Pages?>, <$fields.Pages/></$fields.Pages?>. <$fields.Url?><$fields.Url/></$fields.Url?>
+
+<?$pubType=online?>
+[#<$citeKey/>]: <$authors.abbreviatedNormalizedName.stringByRemovingTeX.@componentsJoinedByCommaAndAmpersand/> (<$fields.Year/>, <$fields.Month/> <$fields.Day/>). <$fields.Title/> [<$fields.Howpublished/>]. Retrieved from <$urls.Url.absoluteString/>
+
+</$pubType?>
+</$publications>
